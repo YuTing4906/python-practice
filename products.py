@@ -6,12 +6,8 @@ while True:
     if name == 'q':
         break
     price = input('請輸入商品價格: ')
-    
-    # 建立二維清單
-    # p = []
-    # p.append(name)
-    # p.append(price)
-    # products.append(p)
-    products.append([name, price])      # 等同於上面那四行
-
+    products.append([name, price])        # 建立二維清單
 print(products)
+
+for p in products:
+    print(p[0], '的價格是', p[1])
