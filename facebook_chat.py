@@ -1,4 +1,4 @@
-# 對話紀錄1-格式改寫
+# 對話紀錄處理-格式改寫
 # 改寫input.txt檔案的格式，變成像output.txt的檔案格式
 
 def read_file(filename):
