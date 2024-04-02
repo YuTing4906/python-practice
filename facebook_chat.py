@@ -8,6 +8,7 @@ def read_file(filename):
             lines.append(line.strip())
     return lines
 
+
 def convert(lines):
     new = []
     person = None   # 用來避免輸入檔案中第一行不是人名，而導致程式當掉的情況
@@ -22,11 +23,13 @@ def convert(lines):
             new.append(person + ': ' + line)
     return new
 
+
 def write_file(filename, lines):
     with open(filename, 'w') as f:
         for line in lines:
             f.write(line + '\n')
-   
+
+
 def main():
     lines = read_file('input.txt')
     lines = convert(lines)
